@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.convention.result.path" value="/"></constant>
+    <!-- handles routing of supported routes on the platform-->
+    <package name="digitalLib" namespace="/" extends="json-default,struts-default">
+
+        <!-- interceptors -->
+        <interceptors>
+            <interceptor name="authenticatorInterceptor" class="interceptors.AuthenticationInterceptor"/>
+            <interceptor-stack name="autheticationStack">
+                <interceptor-ref name="authenticatorInterceptor"></interceptor-ref>
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+        <!-- -->
+        <default-interceptor-ref name="autheticationStack"/>
+        <!---->
+        <global-results>
+            <result name="login" type="redirect">home.action</result>
+        </global-results>
+        <!---->
+        <action name="home">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result>/Login.jsp</result>
+        </action>
+
+        <action name="redirectToPostRide">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result>/rentalHistory.jsp</result>
+        </action>
+
+
+        <!-- User Login -->
+        <action name="loginUser" class="action.user.LoginAction" method="execute">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/Dasboard.jsp</result>
+            <result name="input">/Login.jsp</result>
+        </action>
+
+        <!-- User Registration -->
+        <action name="register" class="action.user.RegistrationAction" method="execute">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/Dasboard.jsp</result>
+            <result name="input">/Login.jsp</result>
+        </action>
+
+        <!--Load Autocomplete Data for Dropdown-->
+        <action name="loadCities" class="action.cities.CitiesAction">
+            <result type="json">
+                <param name="root">cities</param>
+            </result>
+        </action>
+
+    </package>
+</struts>

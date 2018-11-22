@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Findup</groupId>
+    <artifactId>DigitalLib</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.webjars.bower/jquery-ajax-native -->
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>jquery-ajax-native</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.jgeppert.struts2.jquery/struts2-jquery-plugin -->
+        <dependency>
+            <groupId>com.jgeppert.struts2.jquery</groupId>
+            <artifactId>struts2-jquery-plugin</artifactId>
+            <version>3.7.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-core -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>2.5.13</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-convention-plugin -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-convention-plugin</artifactId>
+            <version>2.5.13</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-junit-plugin -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-junit-plugin</artifactId>
+            <version>2.5.13</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+       <!-- &lt;!&ndash; https://mvnrepository.com/artifact/org.jdbi/jdbi3 &ndash;&gt;
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3</artifactId>
+            <version>3.0.0-beta2</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+       <!-- &lt;!&ndash; https://mvnrepository.com/artifact/org.jdbi/jdbi3-sqlobject &ndash;&gt;
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3-sqlobject</artifactId>
+            <version>3.0.0-beta2</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+       <!-- <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-json-plugin -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-json-plugin</artifactId>
+            <version>2.5.14.1</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javassist/javassist -->
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.12.1.GA</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.struts.xwork/xwork-core -->
+        <dependency>
+            <groupId>org.apache.struts.xwork</groupId>
+            <artifactId>xwork-core</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/ognl/ognl -->
+        <dependency>
+            <groupId>ognl</groupId>
+            <artifactId>ognl</artifactId>
+            <version>3.1.14</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.interceptor/javax.interceptor-api -->
+        <dependency>
+            <groupId>javax.interceptor</groupId>
+            <artifactId>javax.interceptor-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jdbi/jdbi3-jodatime2 -->
+        <!--<dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3-jodatime2</artifactId>
+            <version>3.0.0</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.6.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jdbi/jdbi -->
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.webjars.bower/jquery.form.validation -->
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>jquery.form.validation</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.javamoney</groupId>
+            <artifactId>moneta</artifactId>
+            <version>0.9</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>digitalLib</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.3.0.v20150612</version>
+                <configuration>
+                    <webApp>
+                        <contextPath>/${project.build.finalName}</contextPath>
+                    </webApp>
+                    <stopKey>CTRL+C</stopKey>
+                    <stopPort>8999</stopPort>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <scanTargets>
+                        <scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
+                    </scanTargets>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
